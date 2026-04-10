@@ -91,3 +91,23 @@ function scrollTopBtn(){
       window.scrollTo({ top: 0, behavior: 'smooth' });
       btn.classList.remove('show');
     });
+
+
+
+
+
+
+
+
+    // استبدل '.navbar-menu' بالكلاس الحقيقي للقائمة عندك
+// واستبدل '.menu-toggle' بالكلاس الخاص بالثلاث شرط
+const menu = document.querySelector('.navbar-menu'); 
+const toggleBtn = document.querySelector('.menu-toggle');
+
+document.addEventListener('click', function (event) {
+    // التأكد أن الضغطة ليست داخل القائمة وليست على زر الثلاث شرط نفسه
+    if (!menu.contains(event.target) && !toggleBtn.contains(event.target)) {
+        // هنا نقوم بإزالة الكلاس الذي يظهر القائمة (غالباً يكون اسمه 'active' أو 'show')
+        menu.classList.remove('active'); 
+    }
+});

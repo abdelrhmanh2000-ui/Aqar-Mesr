@@ -545,3 +545,48 @@ html {
       display: block;
     }
 
+
+
+/* هذا الكود للتعديل على شكل القائمة في الموبايل فقط */
+@media (max-width: 768px) {
+    .navbar-menu { /* استبدل هذا الاسم بكلاس القائمة عندك */
+        width: 80%; /* تجعل القائمة لا تأخذ عرض الشاشة بالكامل */
+        max-width: 300px; /* حد أقصى للعرض */
+        right: 0; /* مكان ظهورها */
+        left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* توسيط العناصر */
+        padding: 20px;
+    }
+
+    .navbar-menu a {
+        width: fit-content; /* هذا هو السر: العرض على قد الكلام فقط */
+        padding: 10px 30px;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+
+
+
+
+    @media (max-width: 768px) {
+    /* تصغير حجم الحاوية للأزرار */
+    nav, .navbar-container { 
+        display: flex;
+        flex-direction: column; /* جعل الأزرار فوق بعضها بشكل أنيق */
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* ضبط الأزرار لتكون على مقاس الكلام */
+    .navbar-container a, .navbar-container button {
+        width: auto; /* يجعل العرض على قد الكلام */
+        min-width: 150px; /* اختياري: لضمان شكل متناسق */
+        margin: 5px 0;
+        padding: 8px 15px;
+        font-size: 14px; /* تصغير الخط قليلاً ليناسب الموبايل */
+    }
+}
