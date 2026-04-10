@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Way</title>
+    <link rel="stylesheet" href="myway.css">
+</head>
+<body>
+        <h1>ماي شيف</h1>
+
+          <div class="containar5">
+            <img src="./img/198.png" alt="" class="mypic1">
+            <img src="./img/199.png" alt="" class="mypic2">
+            <img src="./img/200.png" alt="" class="mypic11">  
+            <img src="./img/201.png" alt="" class="mypic11">  
+            <img src="./img/202.png" alt="" class="mypic11"> 
+            <img src="./img/203.png" alt="" class="mypic11"> 
+            <img src="./img/204.png" alt="" class="mypic11"> 
+            <img src="./img/205.png" alt="" class="mypic11"> 
+            <img src="./img/206.png" alt="" class="mypic11"> 
+            <img src="./img/207.png" alt="" class="mypic11"> 
+            <img src="./img/208.png" alt="" class="mypic11"> 
+            <img src="./img/209.png" alt="" class="mypic11"> 
+            <img src="./img/210.png" alt="" class="mypic11"> 
+            <img src="./img/211.png" alt="" class="mypic11"> 
+            <img src="./img/212.png" alt="" class="mypic11"> 
+            <img src="./img/213.png" alt="" class="mypic11"> 
+            <img src="./img/214.png" alt="" class="mypic11">
+            <img src="./img/215.png" alt="" class="mypic11">  
+            <img src="./img/216.png" alt="" class="mypic11">  
+            <img src="./img/217.png" alt="" class="mypic11"> 
+            <img src="./img/218.png" alt="" class="mypic11"> 
+            <img src="./img/219.png" alt="" class="mypic11"> 
+            <img src="./img/220.png" alt="" class="mypic11"> 
+            <img src="./img/221.png" alt="" class="mypic11"> 
+            <img src="./img/222.png" alt="" class="mypic11"> 
+            <img src="./img/223.png" alt="" class="mypic11"> 
+            <img src="./img/224.png" alt="" class="mypic11"> 
+            <img src="./img/225.png" alt="" class="mypic11"> 
+            <img src="./img/226.png" alt="" class="mypic11"> 
+            <img src="./img/227.png" alt="" class="mypic11"> 
+            <img src="./img/228.png" alt="" class="mypic11"> 
+            <img src="./img/229.png" alt="" class="mypic11"> 
+            <img src="./img/230.png" alt="" class="mypic11"> 
+            <img src="./img/231.png" alt="" class="mypic11"> 
+            <img src="./img/232.png" alt="" class="mypic11"> 
+            <img src="./img/233.png" alt="" class="mypic11"> 
+            <img src="./img/234.png" alt="" class="mypic11"> 
+            <img src="./img/235.png" alt="" class="mypic11"> 
+            <img src="./img/236.png" alt="" class="mypic11"> 
+            <img src="./img/237.png" alt="" class="mypic11"> 
+            <img src="./img/238.png" alt="" class="mypic11"> 
+            <img src="./img/239.png" alt="" class="mypic11"> 
+            <img src="./img/240.png" alt="" class="mypic11"> 
+            <img src="./img/241.png" alt="" class="mypic11">
+            <img src="./img/242.png" alt="" class="mypic11">  
+            <img src="./img/243.png" alt="" class="mypic11">  
+            <img src="./img/244.png" alt="" class="mypic11"> 
+            <img src="./img/245.png" alt="" class="mypic11"> 
+            <img src="./img/246.png" alt="" class="mypic11"> 
+        </div>
+
+
+        
+  <!-- زر العودة للأعلى -->
+  <button class="scroll-arrow" id="toTop" aria-label="Go to top">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path d="M12 8 L8 12 L16 12 Z" fill="white"/>
+    </svg>
+  </button>
+  
+<script>
+
+        // جافاسكربت لإظهار الزر وإخفاؤه والتحكم في الضغط
+    const btn = document.getElementById('toTop');
+
+    // إظهار الزر بعد النزول 300px
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+
+    // عند الضغط، العودة للأعلى واختفاء الزر
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      btn.classList.remove('show');
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Way</title>
+    <link rel="stylesheet" href="./myway.css">
+    <link rel="stylesheet" href="./myway.js">
+</head>
+<body>
+    <div="top"></div>
+    <h1 class=""> العطور</h1>
+
+            <div class="containar5">
+            <img src="./img/28.11.2025_03.47.19_REC.png" alt="" class="mypic1">
+            <img src="./img/28.11.2025_03.53.20_REC.png" alt="" class="mypic2">
+            <img src="./img/28.11.2025_03.53.38_REC.png" alt="" class="mypic3">
+            <img src="./img/28.11.2025_03.54.46_REC.png" alt="" class="mypi4c">
+            <img src="./img/28.11.2025_03.55.10_REC.png" alt="" class="mypic5">
+            <img src="./img/28.11.2025_03.55.26_REC.png" alt="" class="mypi6">
+            <img src="./img/28.11.2025_03.55.49_REC.png" alt="" class="mypic7">
+            <img src="./img/28.11.2025_04.30.32_REC.png" alt="" class="mypic8">
+            <img src="./img/28.11.2025_04.30.57_REC.png" alt="" class="mypic9">
+            <img src="./img/28.11.2025_04.33.48_REC.png" alt="" class="mypi10c">
+            <img src="./img/28.11.2025_04.36.11_REC.png" alt="" class="mypic11">
+            <img src="./img/28.11.2025_04.37.46_REC.png" alt="" class="mypic11">
+            <img src="./img/28.11.2025_04.39.29_REC.png" alt="" class="mypic11">
+            <img src="./img/14.png" alt="" class="mypic11">
+            <img src="./img/17.png" alt="" class="mypic11">
+            <img src="./img/18.png" alt="" class="mypic11">
+            <img src="./img/19.png" alt="" class="mypic11">
+            <img src="./img/20.png" alt="" class="mypic11">
+            <img src="./img/21.png" alt="" class="mypic11">
+            <img src="./img/22.png" alt="" class="mypic11">
+            <img src="./img/23.png" alt="" class="mypic11">
+            <img src="./img/24.png" alt="" class="mypic11">
+            <img src="./img/25.png" alt="" class="mypic11">
+            <img src="./img/26.png" alt="" class="mypic11">
+            <img src="./img/27.png" alt="" class="mypic11">
+            <img src="./img/28.png" alt="" class="mypic11">
+            <img src="./img/29.png" alt="" class="mypic11">
+            <img src="./img/30.png" alt="" class="mypic11">
+            <img src="./img/31.png" alt="" class="mypic11">
+            <img src="./img/32.png" alt="" class="mypic11">
+            <img src="./img/33.png" alt="" class="mypic11">
+            <img src="./img/34.png" alt="" class="mypic11">
+            <img src="./img/35.png" alt="" class="mypic11">
+            <img src="./img/36.png" alt="" class="mypic11">
+            <img src="./img/37.png" alt="" class="mypic11">
+            <img src="./img/99.png" alt="" class="mypic11">
+            <img src="./img/100.png" alt="" class="mypic11">
+            <img src="./img/101.png" alt="" class="mypic11">
+            <img src="./img/102.png" alt="" class="mypic11">
+            <img src="./img/103.png" alt="" class="mypic11">
+        </div>
+
+  <!-- زر العودة للأعلى -->
+  <button class="scroll-arrow" id="toTop" aria-label="Go to top">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path d="M12 8 L8 12 L16 12 Z" fill="white"/>
+    </svg>
+  </button>
+  
+   
+
+
+
+<script>
+
+        // جافاسكربت لإظهار الزر وإخفاؤه والتحكم في الضغط
+    const btn = document.getElementById('toTop');
+
+    // إظهار الزر بعد النزول 300px
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+
+    // عند الضغط، العودة للأعلى واختفاء الزر
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      btn.classList.remove('show');
+    });
+</script>
+
+</body>
+</html>

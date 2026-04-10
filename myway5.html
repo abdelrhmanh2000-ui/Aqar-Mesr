@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Way</title>
+    <link rel="stylesheet" href="myway.css">
+</head>
+<body>
+        <h1> العنايه الشخصيه</h1>
+          <div class="containar5">
+            <img src="./img/80.png" alt="" class="mypic1">
+            <img src="./img/81.png" alt="" class="mypic2">
+            <img src="./img/82.png" alt="" class="mypic3">
+            <img src="./img/83.png" alt="" class="mypi4c">
+            <img src="./img/108.png" alt="" class="mypic11">
+            <img src="./img/109.png" alt="" class="mypic11">
+            <img src="./img/91.png" alt="" class="mypic11">
+            <img src="./img/92.png" alt="" class="mypic11">
+            <img src="./img/93.png" alt="" class="mypic5">
+            <img src="./img/94.png" alt="" class="mypi6">
+            <img src="./img/95.png" alt="" class="mypic7">
+            <img src="./img/96.png" alt="" class="mypic8">
+            <img src="./img/97.png" alt="" class="mypic9">
+            <img src="./img/98.png" alt="" class="mypi10c">
+            <img src="./img/104.png" alt="" class="mypic11">
+            <img src="./img/105.png" alt="" class="mypic11">
+            <img src="./img/106.png" alt="" class="mypic11">
+            <img src="./img/107.png" alt="" class="mypic11">
+            <img src="./img/110.png" alt="" class="mypic11">
+            <img src="./img/111.png" alt="" class="mypic11">
+            <img src="./img/112.png" alt="" class="mypic11">
+            <img src="./img/113.png" alt="" class="mypic11">
+            <img src="./img/114.png" alt="" class="mypic11">
+            <img src="./img/115.png" alt="" class="mypic11">
+            <img src="./img/116.png" alt="" class="mypic11">
+            <img src="./img/117.png" alt="" class="mypic11">
+            <img src="./img/118.png" alt="" class="mypic11">
+            <img src="./img/119.png" alt="" class="mypic11">
+            <img src="./img/120.png" alt="" class="mypic11">
+            <img src="./img/121.png" alt="" class="mypic11">
+            <img src="./img/122.png" alt="" class="mypic11">
+            <img src="./img/123.png" alt="" class="mypic11">
+            <img src="./img/124.png" alt="" class="mypic11">
+            <img src="./img/125.png" alt="" class="mypic11">
+            <img src="./img/126.png" alt="" class="mypic11">
+            <img src="./img/127.png" alt="" class="mypic11">
+            <img src="./img/128.png" alt="" class="mypic11">
+        </div>
+
+        
+  <!-- زر العودة للأعلى -->
+  <button class="scroll-arrow" id="toTop" aria-label="Go to top">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path d="M12 8 L8 12 L16 12 Z" fill="white"/>
+    </svg>
+  </button>
+ 
+<script>
+
+        // جافاسكربت لإظهار الزر وإخفاؤه والتحكم في الضغط
+    const btn = document.getElementById('toTop');
+
+    // إظهار الزر بعد النزول 300px
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+
+    // عند الضغط، العودة للأعلى واختفاء الزر
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      btn.classList.remove('show');
+    });
+</script>
+
+
+</body>
+</html>
+
+
+
+

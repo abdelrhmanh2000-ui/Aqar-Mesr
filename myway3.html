@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Way</title>
+    <link rel="stylesheet" href="./myway.css">
+</head>
+<body>
+    <h1> المكياج</h1>
+          <div class="containar5">
+            <img src="./img/38.png" alt="" class="mypic1">
+            <img src="./img/39.png" alt="" class="mypic2">
+            <img src="./img/40.png" alt="" class="mypic3">
+            <img src="./img/41.png" alt="" class="mypi4c">
+            <img src="./img/42.png" alt="" class="mypic5">
+            <img src="./img/43.png" alt="" class="mypi6">
+            <img src="./img/44.png" alt="" class="mypic7">
+            <img src="./img/45.png" alt="" class="mypic8">
+            <img src="./img/46.png" alt="" class="mypic9">
+            <img src="./img/47.png" alt="" class="mypi10c">
+            <img src="./img/48.png" alt="" class="mypic11">
+            <img src="./img/49.png" alt="" class="mypic11">
+            <img src="./img/50.png" alt="" class="mypic11">
+            <img src="./img/51.png" alt="" class="mypic11">
+            <img src="./img/52.png" alt="" class="mypic11">
+            <img src="./img/53.png" alt="" class="mypic11">
+        </div>
+
+
+  <!-- زر العودة للأعلى -->
+  <button class="scroll-arrow" id="toTop" aria-label="Go to top">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path d="M12 8 L8 12 L16 12 Z" fill="white"/>
+    </svg>
+  </button>
+<script>
+
+        // جافاسكربت لإظهار الزر وإخفاؤه والتحكم في الضغط
+    const btn = document.getElementById('toTop');
+
+    // إظهار الزر بعد النزول 300px
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+
+    // عند الضغط، العودة للأعلى واختفاء الزر
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      btn.classList.remove('show');
+    });
+</script>
+
+</body>
+</html>

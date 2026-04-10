@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Way</title>
+    <link rel="stylesheet" href="myway.css">
+</head>
+<body>
+        <h1> العنايه بالشعر</h1>
+          <div class="containar5">
+            <img src="./img/136.png" alt="" class="mypic1">
+            <img src="./img/137.png" alt="" class="mypic2">
+            <img src="./img/138.png" alt="" class="mypic3">
+            <img src="./img/139.png" alt="" class="mypic1">
+            <img src="./img/140.png" alt="" class="mypic2">
+            <img src="./img/141.png" alt="" class="mypic3">
+            <img src="./img/142.png" alt="" class="mypi4c">
+            <img src="./img/143.png" alt="" class="mypic11">
+            <img src="./img/144.png" alt="" class="mypic11">
+            <img src="./img/145.png" alt="" class="mypic11">
+            <img src="./img/146.png" alt="" class="mypic1">
+            <img src="./img/147.png" alt="" class="mypic2">
+            <img src="./img/148.png" alt="" class="mypic3">
+            <img src="./img/149.png" alt="" class="mypi4c">
+            <img src="./img/150.png" alt="" class="mypic11">
+            <img src="./img/151.png" alt="" class="mypic11">
+            <img src="./img/152.png" alt="" class="mypic11">
+            <img src="./img/153.png" alt="" class="mypic1">
+            <img src="./img/154.png" alt="" class="mypic2">
+            <img src="./img/155.png" alt="" class="mypic3">
+            <img src="./img/156.png" alt="" class="mypi4c">
+            <img src="./img/157.png" alt="" class="mypic11">
+            <img src="./img/158.png" alt="" class="mypic11">
+            <img src="./img/158.png" alt="" class="mypic11">  
+            <img src="./img/159.png" alt="" class="mypic11">  
+        </div>
+
+        
+  <!-- زر العودة للأعلى -->
+  <button class="scroll-arrow" id="toTop" aria-label="Go to top">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path d="M12 8 L8 12 L16 12 Z" fill="white"/>
+    </svg>
+  </button>
+ 
+<script>
+
+        // جافاسكربت لإظهار الزر وإخفاؤه والتحكم في الضغط
+    const btn = document.getElementById('toTop');
+
+    // إظهار الزر بعد النزول 300px
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+
+    // عند الضغط، العودة للأعلى واختفاء الزر
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      btn.classList.remove('show');
+    });
+</script>
+
+</body>
+</html>
