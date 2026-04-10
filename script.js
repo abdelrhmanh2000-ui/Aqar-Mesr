@@ -96,28 +96,25 @@ function scrollTopBtn(){
 
 
 
-    // ===== Mobile menu logic =====
 const menuBtn = document.getElementById("menu");
 const navBar = document.getElementById("nav");
 
-// فتح وقفل القائمة عند الضغط على زر المنيو
-menuBtn.addEventListener('click', function(e) {
-    e.stopPropagation(); // يمنع غلق القائمة فوراً عند فتحها
+// فتح وقفل المنيو
+menuBtn.onclick = function(e) {
+    e.stopPropagation();
     navBar.classList.toggle("active");
-});
+};
 
-// إغلاق القائمة عند الضغط على أي لينك داخلها
+// إغلاق المنيو لما تضغط على أي لينك
 document.querySelectorAll("#nav a").forEach(link => {
-    link.addEventListener("click", () => {
+    link.onclick = () => {
         navBar.classList.remove("active");
-    });
+    };
 });
 
-// إغلاق القائمة عند الضغط في أي مكان خارجها
-document.addEventListener('click', function(event) {
-    const isClickInside = navBar.contains(event.target) || menuBtn.contains(event.target);
-    
-    if (!isClickInside) {
+// إغلاق المنيو لما تضغط في أي مكان بره
+document.onclick = function(e) {
+    if (!navBar.contains(e.target) && !menuBtn.contains(e.target)) {
         navBar.classList.remove("active");
     }
-});
+};

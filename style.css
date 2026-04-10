@@ -379,80 +379,9 @@ nav a{
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
 
-    /* ===== HEADER ===== */
-    header{
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 15px;
-        text-align: center;
-    }
 
-    nav{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
 
-    .phone{
-        font-size: 14px;
-        padding: 6px 10px;
-    }
-
-    /* ===== HERO ===== */
-    .hero-content h1{
-        font-size: 24px;
-    }
-
-    .hero-content p{
-        font-size: 14px;
-    }
-
-    .hero button{
-        padding: 10px 20px;
-    }
-
-    /* ===== CARDS ===== */
-    .cards{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card{
-        width: 90%;
-    }
-
-    /* ===== ABOUT ===== */
-    .about{
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .stats{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* ===== SECTIONS SPACING ===== */
-    section{
-        padding: 60px 15px;
-    }
-
-    /* ===== SERVICES ===== */
-    .services{
-        grid-template-columns: 1fr;
-    }
-
-    /* ===== CONTACT ===== */
-    .contact-box,
-    .services-box,
-    .contact-form-box{
-        margin: 20px 10px;
-        padding: 30px 15px;
-    }
-}
 
 .phone {
     cursor: pointer;
@@ -547,62 +476,6 @@ html {
 
 
 
-
-
-
-/* 📱 Responsive Mobile Menu */
-@media(max-width:768px){
-    nav {
-        position: absolute;
-        top: 80px; /* المسافة من الأعلى */
-        right: 20px;
-        background: rgba(255, 255, 255, 0.98);
-        width: 200px; /* عرض القائمة */
-        display: none; /* مخفية افتراضياً */
-        flex-direction: column;
-        border-radius: 12px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        padding: 10px;
-        z-index: 1000;
-        border: 1px solid #caa64b;
-    }
-
-    nav.active {
-        display: flex; /* تظهر فقط عند الضغط */
-    }
-
-    nav a {
-        width: fit-content; /* الزر على قد الكلام */
-        min-width: 140px;
-        margin: 8px auto; /* توسيط الأزرار */
-        padding: 10px 15px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .menu-toggle {
-        display: block; /* إظهار زر الثلاث شرط */
-        color: #caa64b;
-    }
-
-    .header {
-        padding: 10px 20px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @media (max-width: 768px) {
     /* تصغير حجم الحاوية للأزرار */
     nav, .navbar-container { 
@@ -621,3 +494,70 @@ html {
         font-size: 14px; /* تصغير الخط قليلاً ليناسب الموبايل */
     }
 }
+
+
+
+
+
+
+
+
+
+/* 📱 التصميم النهائي للموبايل */
+@media (max-width: 768px) {
+    /* إخفاء الناف بار الأساسية */
+    nav {
+        position: absolute !important;
+        top: 70px !important;
+        right: 20px !important;
+        background: #fff !important;
+        width: 200px !important;
+        display: none !important; /* مخفية تماماً */
+        flex-direction: column !important;
+        border-radius: 12px !important;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important;
+        padding: 15px !important;
+        z-index: 9999 !important;
+        border: 1px solid #caa64b !important;
+    }
+
+    /* إظهارها فقط لما نضيف كلاس active */
+    nav.active {
+        display: flex !important;
+    }
+
+    /* ضبط حجم الأزرار جوه القائمة */
+    nav a {
+        width: 100% !important; /* تأخذ عرض القائمة الصغيرة */
+        max-width: 160px !important;
+        margin: 5px auto !important;
+        padding: 10px !important;
+        font-size: 14px !important;
+        text-align: center !important;
+        display: block !important;
+    }
+
+    .menu-toggle {
+        display: block !important; /* إظهار الثلاث شرط */
+        font-size: 30px !important;
+        color: #caa64b !important;
+    }
+
+    /* إخفاء رقم التليفون في الهيدر لو زاحم المكان (اختياري) */
+    .header .phone {
+        display: none; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
