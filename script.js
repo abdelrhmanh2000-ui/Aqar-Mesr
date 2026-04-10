@@ -13,6 +13,19 @@ menu.onclick = function () {
     nav.classList.toggle("active");
 };
 
+// ===== Close menu after click (Mobile) =====
+let links = document.querySelectorAll("#nav a");
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
+    });
+});
+
+menu.onclick = function () {
+    nav.classList.toggle("active");
+};
+
 // ===== WhatsApp quick button =====
 function openWhatsApp(){
     window.location.href = "https://wa.me/201111244434";

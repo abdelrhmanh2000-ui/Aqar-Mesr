@@ -27,19 +27,20 @@ header{
 
 
 
+
 nav a{
     margin:0 10px;
     text-decoration:none;
-    color:#000;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#caa64b;
+    border:none;
+    color:#fff;
+    cursor:pointer;
     transition:0.3s;
-
-    
+    border-radius:8px;
 }
 
-nav a:hover{
-    color:#caa64b;
-    
-}
 
 .phone{
     background:#caa64b;
@@ -86,7 +87,6 @@ nav a:hover{
     transform:translate(-50%,-50%);
     text-align:center;
     color:#d11414;
-    animation:fadeUp 1s ease;
 }
 
 .hero h1{
@@ -508,21 +508,6 @@ html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  html {
       scroll-behavior: smooth; /* يجعل الانتقال سلس */
     }
@@ -559,3 +544,4 @@ html {
     .scroll-arrow svg {
       display: block;
     }
+
