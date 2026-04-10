@@ -547,26 +547,57 @@ html {
 
 
 
-/* هذا الكود للتعديل على شكل القائمة في الموبايل فقط */
-@media (max-width: 768px) {
-    .navbar-menu { /* استبدل هذا الاسم بكلاس القائمة عندك */
-        width: 80%; /* تجعل القائمة لا تأخذ عرض الشاشة بالكامل */
-        max-width: 300px; /* حد أقصى للعرض */
-        right: 0; /* مكان ظهورها */
-        left: auto;
-        display: flex;
+
+
+
+/* 📱 Responsive Mobile Menu */
+@media(max-width:768px){
+    nav {
+        position: absolute;
+        top: 80px; /* المسافة من الأعلى */
+        right: 20px;
+        background: rgba(255, 255, 255, 0.98);
+        width: 200px; /* عرض القائمة */
+        display: none; /* مخفية افتراضياً */
         flex-direction: column;
-        align-items: center; /* توسيط العناصر */
-        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        padding: 10px;
+        z-index: 1000;
+        border: 1px solid #caa64b;
     }
 
-    .navbar-menu a {
-        width: fit-content; /* هذا هو السر: العرض على قد الكلام فقط */
-        padding: 10px 30px;
-        margin: 10px 0;
+    nav.active {
+        display: flex; /* تظهر فقط عند الضغط */
+    }
+
+    nav a {
+        width: fit-content; /* الزر على قد الكلام */
+        min-width: 140px;
+        margin: 8px auto; /* توسيط الأزرار */
+        padding: 10px 15px;
+        font-size: 14px;
         text-align: center;
     }
+
+    .menu-toggle {
+        display: block; /* إظهار زر الثلاث شرط */
+        color: #caa64b;
+    }
+
+    .header {
+        padding: 10px 20px;
+    }
 }
+
+
+
+
+
+
+
+
+
 
 
 

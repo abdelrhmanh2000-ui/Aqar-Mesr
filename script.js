@@ -96,18 +96,28 @@ function scrollTopBtn(){
 
 
 
+    // ===== Mobile menu logic =====
+const menuBtn = document.getElementById("menu");
+const navBar = document.getElementById("nav");
 
+// فتح وقفل القائمة عند الضغط على زر المنيو
+menuBtn.addEventListener('click', function(e) {
+    e.stopPropagation(); // يمنع غلق القائمة فوراً عند فتحها
+    navBar.classList.toggle("active");
+});
 
+// إغلاق القائمة عند الضغط على أي لينك داخلها
+document.querySelectorAll("#nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        navBar.classList.remove("active");
+    });
+});
 
-    // استبدل '.navbar-menu' بالكلاس الحقيقي للقائمة عندك
-// واستبدل '.menu-toggle' بالكلاس الخاص بالثلاث شرط
-const menu = document.querySelector('.navbar-menu'); 
-const toggleBtn = document.querySelector('.menu-toggle');
-
-document.addEventListener('click', function (event) {
-    // التأكد أن الضغطة ليست داخل القائمة وليست على زر الثلاث شرط نفسه
-    if (!menu.contains(event.target) && !toggleBtn.contains(event.target)) {
-        // هنا نقوم بإزالة الكلاس الذي يظهر القائمة (غالباً يكون اسمه 'active' أو 'show')
-        menu.classList.remove('active'); 
+// إغلاق القائمة عند الضغط في أي مكان خارجها
+document.addEventListener('click', function(event) {
+    const isClickInside = navBar.contains(event.target) || menuBtn.contains(event.target);
+    
+    if (!isClickInside) {
+        navBar.classList.remove("active");
     }
 });
